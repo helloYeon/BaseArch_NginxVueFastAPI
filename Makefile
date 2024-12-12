@@ -2,7 +2,7 @@ include .env
 export
 
 show-env:
-    @echo $(APP_ENV)
+	@echo $(APP_ENV)
 
 init:
 	make destroy

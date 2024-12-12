@@ -100,35 +100,6 @@
   "rest-client.environmentVariables": {
     "$shared": {
       "version": "v1"
-    },
-    // ローカル環境
-    "local": {
-      "baseUrl": "http://localhost:2000/peppolreceive/api/v1/",
-      "AUTH_API_ORIGIN": "http://localhost:8888",
-      "AUTH_API_HEADER_IM_ES3_APP_ID": "app_id_1",
-      "AUTH_API_HEADER_IM_ES3_SECRET": "app_sc_2",
-      "AUTH_API_HEADER_IM_ES3_VERSION": "2024-02-15",
-      "IM_ACCESS_POINT_ORIGIN": "http://localhost:8888"
-    },
-    // 開発環境
-    "development": {
-      "baseUrl": "https://peppol:!he78kt1jYZ@api.dev.ppol.imlab.cloud/peppolreceive/api/v1/",
-      "AUTH_API_ORIGIN": "http://ec2-54-64-123-118.ap-northeast-1.compute.amazonaws.com:8010",
-      "AUTH_API_HEADER_IM_ES3_APP_ID": "app_id_1",
-      "AUTH_API_HEADER_IM_ES3_SECRET": "app_sc_2",
-      "AUTH_API_HEADER_IM_ES3_VERSION": "2024-02-15",
-      "IM_ACCESS_POINT_ORIGIN": "http://ec2-54-64-123-118.ap-northeast-1.compute.amazonaws.com:8010"
-    },
-    // ステージング
-    "staging": {
-      "baseUrl": "https://peppol:!he78kt1jYZ@api.stg.ppol.imlab.cloud/peppolreceive/api/v1/",
-      "AUTH_API_ORIGIN": "http://140.238.55.156:8080",
-      "AUTH_API_HEADER_IM_ES3_APP_ID": "peppol-receive-system",
-      "AUTH_API_HEADER_IM_ES3_SECRET": "4cf46c5b-4118-43b1-b883-fb8e8c53be65",
-      "AUTH_API_HEADER_IM_ES3_VERSION": "2024-02-15",
-      "IM_ACCESS_POINT_ORIGIN": "http://3.112.177.253:38080"
-    },
-    // 本番
-    "production": {}
+    }
   }
 }

@@ -8,4 +8,5 @@ COPY frontend /app
 
 RUN npm install
 
+# 開発サーバーをデフォルトコマンドとして設定
 CMD ["npm", "run", "dev"]

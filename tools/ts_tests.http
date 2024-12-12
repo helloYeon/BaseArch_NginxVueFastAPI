@@ -1,0 +1,9 @@
+
+
+
+@LocalBaseUrl = http://localhost:2100/api/v1/
+@TestBaseUrl = http://168.138.207.109/api/v1/
+
+###
+#  Get Env
+GET {{LocalBaseUrl}}tests/env HTTP/1.1

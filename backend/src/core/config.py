@@ -11,51 +11,11 @@ from .constant import Constant
 class Config(BaseSettings):
     """項目"""
 
-    # DB関連
-    DB_HOST: Union[str, None] = None
-    DB_DATABASE: Union[str, None] = None
-    DB_USERNAME: Union[str, None] = None
-    DB_PASSWORD: Union[str, None] = None
-    DB_PORT: Union[str, None] = None
-    DB_SCHEME: Union[str, None] = None
-
     # フロントURL
     FQDN_FE: Union[str, None] = None
 
     # BASE DOMAIN
     BASE_DOMAIN: Union[str, None] = None
-
-    # AWS関連
-    AWS_S3_PUBLIC_BUCKET: Union[str, None] = None
-    AWS_S3_PRIVATE_BUCKET: Union[str, None] = None
-    AWS_DEFAULT_REGION: Union[str, None] = None
-    AWS_S3_URL: Union[str, None] = None
-    AWS_ACCESS_KEY_ID: Union[str, None] = None
-    AWS_SECRET_KEY: Union[str, None] = None
-
-    # OCI関連
-    OCI_REGION: Union[str, None] = None
-    OCI_STORAGE_ENDPOINT: Union[str, None] = None
-    OCI_ACCESS_KEY: Union[str, None] = None
-    OCI_SECRET_KEY: Union[str, None] = None
-
-    # アクセスポイント
-    IM_ACCESS_POINT_ORIGIN: Union[str, None] = None
-
-    # 認証関連APIオリジン
-    AUTH_API_ORIGIN: Union[str, None] = None
-
-    # 認証関連APIヘッダー情報
-    AUTH_API_HEADER_IM_ES3_APP_ID: Union[str, None] = None
-    AUTH_API_HEADER_IM_ES3_SECRET: Union[str, None] = None
-    AUTH_API_HEADER_IM_ES3_VERSION: Union[str, None] = None
-
-    # 認証関連 : パラメータ情報
-    AUTH_API_RECEIVE_SERVICE_ID: Union[str, None] = None
-    AUTH_API_RECEIVE_OPTION_ID: Union[str, None] = None
-
-    # Oracleデフォルトスキーマ
-    DEFAULT_SCHEME: Union[str, None] = None
 
     # コンスタント
     CONSTANT: Constant = Constant()

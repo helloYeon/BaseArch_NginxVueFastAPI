@@ -11,7 +11,7 @@ services:
     build:
       context: ./docker-local/nginx/
     ports:
-      - "2000:80"
+      - "2100:80"
     volumes:
       - ./src/:/usr/share/nginx/html
       - ./docker-local/nginx/config/nginx.conf:/etc/nginx/nginx.conf
@@ -20,21 +20,22 @@ services:
       - vue
     networks:
       - common
+
   ####################
   # vue
   ####################
   vue:
     container_name: ${COMPOSE_PROJECT_NAME}-vue
     build:
-      context: ./docker-local/vue
+      context: .
+      dockerfile: ./docker-local/vue/Dockerfile
     ports:
-      - "1000:80"
+      - "8100:8081"
     environment:
       APP_ENV: ${APP_ENV}
     volumes:
       - ./frontend:/app
     tty: true
-    command: npm run dev
     networks:
       - common
 
@@ -50,15 +51,10 @@ services:
     privileged: true
     platform: linux/amd64
     ports:
-      - "8000:8000"
-      - "5001:5678"
+      - "8200:8000"
+      - "5101:5678"
     environment:
       APP_ENV: ${APP_ENV}
-      DB_HOST: ${DB_HOST}
-      DB_DATABASE: ${DB_DATABASE}
-      DB_USERNAME: ${DB_USERNAME}
-      DB_PASSWORD: ${DB_PASSWORD}
-      DB_PORT: ${DB_PORT}
       PYTHONPATH: ${PYTHONPATH}
       TZ: "Asia/Tokyo"
       # PYTHONUSERBASE: /app/packages

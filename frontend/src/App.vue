@@ -1,9 +1,3 @@
-<template>
-  <v-app>
-    <component :is="$route.meta.layout || 'div'">
-      <router-view />
-    </component>
-  </v-app>
-</template>
+<template><router-view /></template>
 
 <script setup lang="ts"></script>
