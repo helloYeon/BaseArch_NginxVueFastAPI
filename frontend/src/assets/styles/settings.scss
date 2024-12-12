@@ -1,0 +1,17 @@
+@use 'vuetify/settings' with (
+  // VBtn
+  $button-height: 32px,
+  $button-font-size: 14px,
+  $button-icon-font-size: 12px,
+  // VField
+  $field-font-size: 12px,
+  $field-input-min-height: 35px,
+  $field-input-padding-top: 8px,
+  $field-input-padding-bottom: 8px,
+  $field-clearable-margin: 0,
+  // VDatePicker
+  $date-picker-month-day-size: 45px,
+  $date-picker-month-font-size: 12px,
+  // VSnackBar
+  $snackbar-font-size: 1.4rem
+);

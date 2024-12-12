@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "humao.rest-client",
+    "charliermarsh.ruff",
+    "streetsidesoftware.code-spell-checker",
+    "ms-python.black-formatter",
+    "ms-python.vscode-pylance",
+    "ms-python.python",
+    "njpwerner.autodocstring",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+  ]
+}

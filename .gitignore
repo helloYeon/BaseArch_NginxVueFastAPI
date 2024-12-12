@@ -1,0 +1,15 @@
+# common
+.DS_Store
+*.code-workspace
+*.log
+*.log\.*
+.venv
+
+# backend
+backend/src/site-packages/
+backend/src/tests/storage/
+__pycache__/
+
+# frontend
+frontend/node_modules
+frontend/dist

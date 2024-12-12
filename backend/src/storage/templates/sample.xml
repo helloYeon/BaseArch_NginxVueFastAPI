@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ppolitems>
+    {% for item in items %}
+    <item>
+        <id>{{item.id}}</id>
+        <sortOrder>{{item.sortOrder}}</sortOrder>
+        <parentSortOrder>{{item.parentSortOrder}}</parentSortOrder>
+        <btId>{{item.btId}}</btId>
+        <nameJp>{{item.nameJp}}</nameJp>
+        <isExistData>{{item.isExistData}}</isExistData>
+        <type>{{item.type}}</type>
+    </item>
+    {% endfor%}
+</ppolitems>
