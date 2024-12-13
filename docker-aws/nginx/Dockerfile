@@ -1,11 +1,10 @@
 # ----------------------
 # Nginx Stage
 # ----------------------
-FROM nginx:1.23.2-alpine
+FROM nginx:1.23.2-alpine AS nginx
 
 WORKDIR /app/public
 
-COPY ./docker-aws/nginx/config/nginx.conf /etc/nginx/nginx.conf
 COPY ./public /app/public
 
 # ----------------------
@@ -26,6 +25,8 @@ RUN npm run build
 # Final Stage
 # ----------------------
 FROM nginx AS final
+
+COPY ./docker-aws/nginx/config/nginx.conf /etc/nginx/nginx.conf
 
 COPY --from=vue-build /app/dist/ /app/public/
 

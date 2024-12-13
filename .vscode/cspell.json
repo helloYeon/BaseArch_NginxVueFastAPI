@@ -16,6 +16,7 @@
     "fastcgi",
     "uvicorn",
     "SAMEORIGIN",
+    "hoge",
     "gunicorn",
     "debugpy",
     "PYTHONUNBUFFERED",
