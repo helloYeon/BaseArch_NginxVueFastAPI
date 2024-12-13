@@ -45,3 +45,14 @@ def get_env(request: Request) -> dict[str, Any]:
         "os.environ": dict(os.environ),
         "PATH": sys.path,
     }
+
+
+@router.get("/echo", name="渡されたパラメータをそのまま返す")
+def get_request(request: Request):
+    """環境変数を確認
+
+    Returns:
+        dict[str, Any]: 全ての環境変数
+    """
+    query = request.query_params
+    return query
